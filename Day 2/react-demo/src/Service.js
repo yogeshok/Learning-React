@@ -1,19 +1,26 @@
 function Service(props) {
 
     return (
-        <div>
-            <div className="">
-                Image
+
+        <div className="card">
+            <div className="card-img">
+                <img src={props.image} alt="" className="card-image" />
             </div>
-            <h1>Title</h1>
-            <p>
-                Description
+            <h1 className="card-title">{props.title}</h1>
+            <p className="card-desc">
+                {props.desc}
             </p>
-            <button>
-                Read more
-            </button>
+            <p className="btn-parent">
+                <button className="card-btn">
+                    Read More
+                </button>
+            </p>
         </div>
+
     )
+
+
 }
+
 
 export default Service;
